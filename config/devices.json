@@ -1,0 +1,107 @@
+[
+  {
+    "deviceId": "192.168.1.83",
+    "name": "Caméra Intersection Principale",
+    "location": {
+      "latitude": 31.6352166,
+      "longitude": -8.0156295
+    },
+    "zones": [
+      {
+        "id": "parking_zone_1",
+        "name": "Zone de stationnement 1",
+        "type": "parking",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0.0, 0.4], [0.55, 0.4], [0.55, 0.47], [0.0, 0.47]]
+        },
+        "rules": {
+          "maxDuration": 7200,
+          "allowedHours": {
+            "start": 8,
+            "end": 20
+          }
+        }
+      },
+      {
+        "id": "garbage_zone_1",
+        "name": "Zone poubelle 1",
+        "type": "garbage",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0.5, 0.35], [0.75, 0.35], [0.7, 0.47], [0.5, 0.47]]
+        },
+        "rules": {
+          "checkInterval": 3600,
+          "alertThreshold": 0.8
+        }
+      },
+      {
+        "id": "crowd_zone_1",
+        "name": "Zone de foule 1",
+        "type": "crowd",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0, 0], [1, 0], [1, 1], [0, 1]]
+        },
+        "rules": {
+          "maxPersonCount": 2,
+          "densityThreshold": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "deviceId": "192.168.1.37",
+    "name": "CAREE EDEN ",
+    "location": {
+      "latitude": 31.634911,
+      "longitude": -8.012111
+    },
+    "zones": [
+      {
+        "id": "parking_zone_1",
+        "name": "Zone de stationnement 1",
+        "type": "parking",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0.1, 0.1], [0.3, 0.1], [0.3, 0.3], [0.1, 0.3]]
+        },
+        "rules": {
+          "maxDuration": 7200,
+          "allowedHours": {
+            "start": 8,
+            "end": 20
+          }
+        }
+      },
+      {
+        "id": "garbage_zone_1",
+        "name": "Zone poubelle 1",
+        "type": "garbage",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0.4, 0.4], [0.5, 0.4], [0.5, 0.5], [0.4, 0.5]]
+        },
+        "rules": {
+          "checkInterval": 3600,
+          "alertThreshold": 0.8
+        }
+      },
+      {
+        "id": "crowd_zone_1",
+        "name": "Zone de foule 1",
+        "type": "crowd",
+        "geometry": {
+          "type": "polygon",
+          "coordinates": [[0.6, 0.6], [0.8, 0.6], [0.8, 0.8], [0.6, 0.8]]
+        },
+        "rules": {
+          "maxPersonCount": 10,
+          "densityThreshold": 0.5
+        }
+      }
+    ]
+  }
+]
+

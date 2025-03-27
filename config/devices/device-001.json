@@ -1,0 +1,57 @@
+{
+  "deviceId": "device-001",
+  "ipAddress": "192.168.1.101",
+  "name": "Caméra Entrée Nord",
+  "location": {
+    "latitude": 48.8566,
+    "longitude": 2.3522
+  },
+  "zones": [
+    {
+      "id": "zone-parking-1",
+      "name": "Parking Nord",
+      "type": "parking",
+      "geometry": {
+        "xMin": 50,
+        "yMin": 100,
+        "xMax": 300,
+        "yMax": 400
+      },
+      "rules": {
+        "maxDuration": 3600,
+        "minConfidence": 0.7
+      }
+    },
+    {
+      "id": "zone-trash-1",
+      "name": "Poubelle Entrée",
+      "type": "trash",
+      "geometry": {
+        "xMin": 800,
+        "yMin": 100,
+        "xMax": 900,
+        "yMax": 200
+      },
+      "rules": {
+        "fullThreshold": 0.8,
+        "minConfidence": 0.6
+      }
+    },
+    {
+      "id": "zone-crowd-1",
+      "name": "Zone Entrée",
+      "type": "crowd",
+      "geometry": {
+        "xMin": 100,
+        "yMin": 500,
+        "xMax": 600,
+        "yMax": 800
+      },
+      "rules": {
+        "crowdThreshold": 10,
+        "minConfidence": 0.6
+      }
+    }
+  ]
+}
+
